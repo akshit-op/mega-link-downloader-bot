@@ -20,13 +20,6 @@ from database.blacklist import check_blacklist
 from database.userchats import add_chat
 
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
-REPLY_MARKUP = InlineKeyboardMarkup(
-    [
-        [InlineKeyboardButton("🚀 Deploy Yours Now! 😍", url="https://github.com/XMYSTERlOUSX/mega-link-downloader-bot")],
-    ]
-)
 
 @Client.on_message(filters.command("help"))
 async def help_user(bot, update):
